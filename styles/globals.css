@@ -20,6 +20,11 @@ a {
 }
 
 @font-face {
-  font-family: 'burtons';
-  src: url('../public/Burtons.otf') 
+  font-family: 'quicksand';
+  src: url('../public/Quicksand.ttf') 
+}
+
+@font-face {
+  font-family: 'quicksand-bold';
+  src: url('../public/Quicksand-Bold.ttf') 
 }
