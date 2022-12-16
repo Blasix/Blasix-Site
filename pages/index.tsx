@@ -25,8 +25,8 @@ export default function Home() {
             <nav className='w-full flex pt-6 mb-12 justify-between items-center text-2xl lg:text-3xl'>
               <h1 className='text-3xl md:text-4xl lg:text-6xl font-quicksandB text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-800'>Blasix</h1>
               <ul className='hidden gap-4 lg:gap-8 list-none items-center font-quicksand md:flex '>
-                <a href='#home'>Home</a>
                 <a href='#about' >About</a>
+                <a href='#skills'>Skills</a>
                 <a href='#projects' >Projects</a>
               </ul>
               <Link href='/contact' className='hidden px-4 py-2 font-quicksand md:flex'>Contact Me</Link>
@@ -40,8 +40,9 @@ export default function Home() {
                   className={`${!toggle ? "hidden" : "flex"
                     } p-6 absolute top-20 right-0 mx-4 my-2 w-auto rounded-xl bg-gradient-to-br from-gray-100 to-gray-300 sidebar`}>
                   <ul className=' gap-4 lg:gap-8 list-none items-center flex-col font-quicksand flex '>
-                    <a href='#home' onClick={() => setToggle((prev) => !prev)}>Home</a>
+
                     <a href='#about' onClick={() => setToggle((prev) => !prev)}>About </a>
+                    <a href='#skills' onClick={() => setToggle((prev) => !prev)}>Skills</a>
                     <a href='#projects' onClick={() => setToggle((prev) => !prev)}>Projects</a>
                     <Link href='/contact' onClick={() => setToggle((prev) => !prev)}>Contact Me</Link>
                   </ul>
@@ -49,7 +50,7 @@ export default function Home() {
               </div>
             </nav>
 
-            <section id='home' className='flex md:flex-row flex-col items-center'>
+            <section id='home' className='flex lg:flex-row flex-col items-center'>
               <div className='flex flex-col items-center md:items-start '>
                 <h2 className='text-5xl sm:text-6xl py-8 md:pl-10 font-quicksandB md:text-7xl 2xl:text-[5.5rem]'>Mobile<br />Development</h2>
                 <h3 className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl'>Blasix is a company made by Bas,<br />to create the best innovations &<br />world class quality solutions</h3>
@@ -59,29 +60,78 @@ export default function Home() {
                 <div className=' md:py-10 self-center'>
                   <div className=' rounded-full  justify-center items-center w- w-20 h-20 md:w-32 md:h-32 rotate-90 bg-gray-500 p-[2px] cursor-pointer flex md:mr-4 mr-0'>
                     <div className='rounded-full flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] bg-white '>
-                      <p className="text-4xl text-gray-500">➜</p>
+                      <p className="md:text-4xl text-gray-500">➜</p>
                     </div>
                   </div>
                 </div>
 
               </div>
 
-              <div className='flex-1 flex md:hidden lg:flex justify-end items-center md:my-0 my-10 relative'>
+              <div className='flex-1 flex justify-end items-center md:my-0 my-10 relative'>
                 <img src="home.svg" alt="home" className='w-[50rem] h-auto relative z-[5] pb-10' />
               </div>
             </section>
 
 
+            <div className='flex lg:flex-row flex-col justify-between '>
+              <section id='about'>
+                <h1 className='text-6xl font-quicksandB m-10'>About</h1>
+                <p className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl'>For now it is only me, but my passion is to make apps and websites to make the world a better place,<br /> so if you would like to join the team, get something made or just want to cantact me jou can join the discord or send a mail</p>
+              </section>
 
-            <section id='about'>
-              about
-            </section>
+              <section id='skills'>
+                <h1 className='text-6xl font-quicksandB m-10'>Skills</h1>
+                <div className='flex flex-row gap-6'>
+                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/flutter.svg" alt="css" className='w-20 h-20 m-5' />
+                  </div>
+                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/dart.svg" alt="css" />
+                  </div>
+                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/tailwind.svg" alt="css" className='w-20 h-20 m-5' />
+                  </div>
+                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/css.svg" alt="css" />
+                  </div>
+                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/html.svg" alt="css" />
+                  </div>
+                </div>
+
+              </section>
+            </div>
+
 
             <section id='projects'>
-              projects
+              <h1 className='text-6xl font-quicksandB m-10'>Projects</h1>
+
+              <div className='my-4 flex bg-gray-100 h-60 lg:h-80 w-full flex-row justify-between'>
+                <div className='flex flex-row '>
+                  <div className='bg-blue-600 w-2' />
+                  <h1 className='text-5xl lg:text-7xl font-quicksand -rotate-90 ml-20 lg:ml-36'>2023</h1>
+                  <div className='flex justify-center flex-col lg:gap-4 -ml-20 '>
+                    <h1 className='font-quicksandB text-2xl sm:text-5xl lg:text-6xl 2xl:text-7xl'>Group Planner</h1>
+                    <h2 className='font-quicksand text-xl sm:text-4xl lg:text-5xl'>A mobile app</h2>
+                  </div>
+                </div>
+                <img src='app.svg' alt='app' className='m-4 hidden xl:flex'></img>
+              </div>
+
+              <div className='my-4 flex bg-gray-100 h-60 lg:h-80 w-full flex-row justify-between'>
+                <div className='flex flex-row'>
+                  <div className='bg-purple-600 w-2' />
+                  <h1 className='text-5xl lg:text-7xl font-quicksand -rotate-90 ml-20 lg:ml-36'>2022</h1>
+                  <div className='flex justify-center flex-col lg:gap-4 -ml-20'>
+                    <h1 className='font-quicksandB text-2xl sm:text-5xl lg:text-6xl 2xl:text-7xl'>Blasix.com</h1>
+                    <h2 className='font-quicksand text-xl sm:text-4xl lg:text-5xl'>This Website {': )'}</h2>
+                  </div>
+                </div>
+                <img src='web.svg' alt='web' className='m-4 hidden xl:flex'></img>
+              </div>
             </section>
 
-
+            <div className='h-60' />
           </div>
         </div>
       </main>
@@ -89,12 +139,13 @@ export default function Home() {
       <footer className='bg-gray-100 py-8 px-4 md:px-10 w-full overflow-hidden'>
         <div className='flex justify-center items-center sm:px-16 px-6'>
           <div className='xl:max-w-[1920px] w-full' >
-            <h1 className='flex pb-2 lg:pb-4 items-center text-3xl md:text-4xl lg:text-6xl font-quicksandB'>Knock@Blasix.com
+            <a href='mailto: knock@blasix.com' className='flex pb-2 lg:pb-4 items-center text-3xl md:text-4xl lg:text-6xl font-quicksandB'>Knock@Blasix.com
               <span className=' text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-800 px-4'>➜</span>
-            </h1>
+            </a>
             <li className='flex items-center font-quicksand text-xl lg:text-2xl gap-4 lg:gap-8'>
               <a href='#home'>Home</a>
               <a href='#about' >About </a>
+              <a href='#skills'>Skills</a>
               <a href='#projects' >Projects </a>
             </li>
           </div>

@@ -1,11 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { useState } from 'react';
 import { BsFillMoonStarsFill } from "react-icons/bs";
-
-// Design: https://dribbble.com/shots/18719635-Ahensy-Creative-Design-Agency-Landing-Page-Website
-// SVG: https://creazilla.com/nodes/1998602-startup-svg-clipart
-// Command to start: npm run dev
 
 export default function contact() {
     return (
@@ -19,7 +14,6 @@ export default function contact() {
             <main className='bg-white w-full overflow-hidden'>
                 <div className='flex justify-center items-center sm:px-16 px-6'>
                     <div className='xl:max-w-[1920px] w-full'>
-
                         Contact Page a neef
                     </div>
                 </div>
