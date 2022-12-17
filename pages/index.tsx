@@ -29,7 +29,7 @@ export default function Home() {
                 <a href='#skills'>Skills</a>
                 <a href='#projects' >Projects</a>
               </ul>
-              <Link href='/contact' className='hidden px-4 py-2 font-quicksand md:flex'>Contact Me</Link>
+              <Link href='mailto: knock@blasix.com' className='hidden px-4 py-2 font-quicksand md:flex'>Contact Me</Link>
               <div className='md:hidden flex flex-1 justify-end items-center'>
                 <img
                   src={toggle ? 'close.svg' : 'menu.svg'}
@@ -44,7 +44,7 @@ export default function Home() {
                     <a href='#about' onClick={() => setToggle((prev) => !prev)}>About </a>
                     <a href='#skills' onClick={() => setToggle((prev) => !prev)}>Skills</a>
                     <a href='#projects' onClick={() => setToggle((prev) => !prev)}>Projects</a>
-                    <Link href='/contact' onClick={() => setToggle((prev) => !prev)}>Contact Me</Link>
+                    <Link href='mailto: knock@blasix.com' onClick={() => setToggle((prev) => !prev)}>Contact Me</Link>
                   </ul>
                 </div>
               </div>
@@ -52,18 +52,18 @@ export default function Home() {
 
             <section id='home' className='flex lg:flex-row flex-col items-center'>
               <div className='flex flex-col items-center md:items-start '>
-                <h2 className='text-5xl sm:text-6xl py-8 md:pl-10 font-quicksandB md:text-7xl 2xl:text-[5.5rem]'>Mobile<br />Development</h2>
-                <h3 className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl'>Blasix is a company made by Bas,<br />to create the best innovations &<br />world class quality solutions</h3>
-                <h1 className='flex py-6 md:pl-20 items-center font-quicksandB text-xl sm:text-3xl md:text-5xl'>Lets Talk
+                <h2 className='text-5xl sm:text-6xl py-8 md:pl-10 font-quicksandB md:text-7xl 2xl:text-[5.5rem] text-center lg:text-start'>Mobile<br />Development</h2>
+                <h3 className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl text-center lg:text-start'>Blasix is a company made by Bas,<br />to create the best innovations &<br />world class quality solutions</h3>
+                <a href='mailto: knock@blasix.com' className='flex py-6 md:pl-20 items-center font-quicksandB text-xl sm:text-3xl md:text-5xl'>Lets Talk
                   <span className=' text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-800 px-4'>➜</span>
-                </h1>
-                <div className=' md:py-10 self-center'>
+                </a>
+                <a className=' md:py-10 self-center' href='#projects'>
                   <div className=' rounded-full  justify-center items-center w- w-20 h-20 md:w-32 md:h-32 rotate-90 bg-gray-500 p-[2px] cursor-pointer flex md:mr-4 mr-0'>
                     <div className='rounded-full flex justify-center items-center flex-col bg-primary w-[100%] h-[100%] bg-white '>
                       <p className="md:text-4xl text-gray-500">➜</p>
                     </div>
                   </div>
-                </div>
+                </a>
 
               </div>
 
@@ -72,36 +72,38 @@ export default function Home() {
               </div>
             </section>
 
+            <div className='lg:h-20' />
 
-            <div className='flex lg:flex-row flex-col justify-between '>
-              <section id='about'>
-                <h1 className='text-6xl font-quicksandB m-10'>About</h1>
-                <p className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl'>For now it is only me, but my passion is to make apps and websites to make the world a better place,<br /> so if you would like to join the team, get something made or just want to cantact me jou can join the discord or send a mail</p>
+            <div className='flex lg:flex-row flex-col justify-between gap-10'>
+              <section id='about' className='lg:w-1/2'>
+                <h1 className='text-6xl font-quicksandB m-10 flex lg:flex-row flex-col items-center'>About</h1>
+                <p className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl text-center lg:text-start'>For now it is only me, but my passion is to make apps and websites to make the world a better place, so if you would like to join the team, get something made or just want to cantact me jou can join the discord or send a mail</p>
               </section>
 
               <section id='skills'>
-                <h1 className='text-6xl font-quicksandB m-10'>Skills</h1>
-                <div className='flex flex-row gap-6'>
-                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
-                    <img src="skills/flutter.svg" alt="css" className='w-20 h-20 m-5' />
+                <h1 className='text-6xl font-quicksandB m-10 flex lg:flex-row flex-col items-center'>Skills</h1>
+                <div className='flex flex-wrap gap-4 justify-center'>
+                  <div className='flex w-32 h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/flutter.svg" alt="css" className='w-20 h-20 m-5 2xl:w-32 2xl:h-32' />
                   </div>
-                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
-                    <img src="skills/dart.svg" alt="css" />
+                  <div className='flex w-32 h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/dart.svg" alt="css" className=' 2xl:w-28 2xl:h-28' />
                   </div>
-                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
-                    <img src="skills/tailwind.svg" alt="css" className='w-20 h-20 m-5' />
+                  <div className='flex w-32 h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/tailwind.svg" alt="css" className='w-20 h-20 m-5 2xl:w-32 2xl:h-32' />
                   </div>
-                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
-                    <img src="skills/css.svg" alt="css" />
+                  <div className='flex w-32 h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/css.svg" alt="css" className=' 2xl:w-24 2xl:h-24' />
                   </div>
-                  <div className='flex w-32 h-32 bg-gray-100 rounded-full p-5 justify-center items-center'>
-                    <img src="skills/html.svg" alt="css" />
+                  <div className='flex w-32 h-32 2xl:w-40 2xl:h-40 bg-gray-100 rounded-full p-5 justify-center items-center'>
+                    <img src="skills/html.svg" alt="css" className=' 2xl:w-24 2xl:h-24' />
                   </div>
                 </div>
 
               </section>
             </div>
 
+            <div className='h-10 lg:h-32' />
 
             <section id='projects'>
               <h1 className='text-6xl font-quicksandB m-10'>Projects</h1>
@@ -131,7 +133,7 @@ export default function Home() {
               </div>
             </section>
 
-            <div className='h-60' />
+            <div className='lg:h-32' />
           </div>
         </div>
       </main>
