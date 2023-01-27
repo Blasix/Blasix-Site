@@ -77,7 +77,9 @@ export default function Home() {
             <div className='flex lg:flex-row flex-col justify-between gap-10'>
               <section id='about' className='lg:w-1/2'>
                 <h1 className='text-6xl font-quicksandB m-10 flex lg:flex-row flex-col items-center'>About</h1>
-                <p className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl text-center lg:text-start'>For now it is only me, but my passion is to make apps and websites to make the world a better place, so if you would like to join the team, get something made or just want to cantact me jou can join the discord or send a mail</p>
+                <p className='font-quicksand md:py-6 md:pl-20 text-xl sm:text-2xl md:text-[1.6rem] 2xl:text-3xl text-center lg:text-start'>For now it is only me, but my passion is to make apps and websites to make the world
+                  a better place, so if you would like to join the team, get something made or just
+                  want to contact me, you can send me an email</p>
               </section>
 
               <section id='skills'>
@@ -108,7 +110,7 @@ export default function Home() {
             <section id='projects'>
               <h1 className='text-6xl font-quicksandB m-10'>Projects</h1>
 
-              <div className='my-4 flex bg-gray-100 h-60 lg:h-80 w-full flex-row justify-between'>
+              <a className='my-4 flex bg-gray-100 h-60 lg:h-80 w-full flex-row justify-between' href="https://groupplanner.blasix.com">
                 <div className='flex flex-row '>
                   <div className='bg-blue-600 w-2' />
                   <h1 className='text-5xl lg:text-7xl font-quicksand -rotate-90 ml-20 lg:ml-36'>2023</h1>
@@ -118,7 +120,7 @@ export default function Home() {
                   </div>
                 </div>
                 <img src='app.svg' alt='app' className='m-4 hidden xl:flex'></img>
-              </div>
+              </a>
 
               <div className='my-4 flex bg-gray-100 h-60 lg:h-80 w-full flex-row justify-between'>
                 <div className='flex flex-row'>
