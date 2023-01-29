@@ -23,7 +23,7 @@ export default function Home() {
           <div className='xl:max-w-[1920px] w-full'>
 
             <nav className='w-full flex pt-6 mb-12 justify-between items-center text-2xl lg:text-3xl'>
-              <h1 className='text-3xl md:text-4xl lg:text-6xl font-quicksandB text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-800'>Blasix</h1>
+              <img src="logoTextSide.svg" alt="logo" className='h-10 lg:h-14 object-contain' />
               <ul className='hidden gap-4 lg:gap-8 list-none items-center font-quicksand md:flex '>
                 <a href='#about' >About</a>
                 <a href='#skills'>Skills</a>
