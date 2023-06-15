@@ -1,6 +1,7 @@
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+<!-- https://github.com/Blasix/Blasix-Site/tree/bc133fc90a55d3c7f37316df5d3d91a3432d5c3e -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,7 +11,16 @@
 </head>
 
 <body>
-    <div id="navbar"></div>
+    <div id="navbar" class="absolute w-full"></div>
+
+    <div class="h-screen flex justify-between items-center">
+        <div class="text-center flex flex-col gap-3">
+            <h1 class="text-6xl">Software Development</h1>
+            <div class="border-t border-gray-400"></div>
+            <p class="text-gray-600 text-4xl">Blasix, We fire through all software problems</p>
+        </div>
+        <img src="/assets/home.svg" alt="Home">
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
