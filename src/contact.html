@@ -8,18 +8,43 @@
 </head>
 
 <body>
-    <div id="navbar" class="absolute w-full"></div>
+    <!-- navbar -->
+    <nav class="bg-slate-500 w-full flex justify-between items-center text-2xl lg:text-3xl">
+        <img src="/assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
+        <ul class="hidden lg:flex gap-4 lg:gap-8 list-none items-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="menu_button" class="lg:hidden cursor-pointer">
+            <img src="/assets/buttons/menu.svg" alt="menu_button_img">
+        </button>
+
+        <div id="menu" class="hidden bg-slate-500 h-[100vh] absolute inset-0">
+            <button id="close_button" class="cursor-pointer">
+                <img src="/assets/buttons/close.svg" alt="close_button_img">
+            </button>
+            <ul class="h-full grid place-items-center py-20">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("navbar").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("GET", "navbar.html", true);
-            xhttp.send();
+        const menu_button = document.querySelector("#menu_button");
+        const close_button = document.querySelector("#close_button");
+        const menu = document.querySelector("#menu");
+
+        menu_button.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+        close_button.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
         });
     </script>
 </body>
