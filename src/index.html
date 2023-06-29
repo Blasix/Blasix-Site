@@ -16,7 +16,7 @@
     <link href="./css/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-stone-950 dark:text-white md:overflow-hidden font-quicksand">
+<body class="dark:bg-stone-950 dark:text-white overflow-hidden font-quicksand">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
@@ -37,20 +37,24 @@
                     <img src="./assets/buttons/menu.svg" alt="menu_button_img">
                 </button>
 
-                <div id="menu" class="hidden bg-slate-500 h-[100vh] absolute inset-0">
-                    <button id="close_button" class="cursor-pointer">
-                        <img src="./assets/buttons/close.svg" alt="close_button_img">
-                    </button>
-                    <ul class="h-full grid place-items-center py-20">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <div id="menu"
+                    class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                    <div
+                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800 ">
+                        <ul class="flex-col flex gap-1">
+                            <li><a href="index.html" class="dark:text-white font-semibold">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <button id="close_button" class="cursor-pointer pt-2">
+                            <img src="./assets/buttons/close.svg" alt="close_button_img">
+                        </button>
+                    </div>
                 </div>
             </nav>
 
-            <div id="body" class=" h-screen flex justify-between items-center">
+            <div id="body" class=" h-screen flex justify-between items-center lg:flex-row flex-col">
                 <div class="text-center flex flex-col gap-3">
                     <h1 class="text-6xl">Software Development</h1>
                     <div class="border-t border-gray-400"></div>

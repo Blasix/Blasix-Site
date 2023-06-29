@@ -29,6 +29,26 @@
                     <li><a href="contact.html" class="dark:text-white font-semibold">Contact</a></li>
                 </ul>
 
+                <!-- small screen navbar (burger menu) -->
+                <button id="menu_button" class="lg:hidden cursor-pointer">
+                    <img src="./assets/buttons/menu.svg" alt="menu_button_img">
+                </button>
+
+                <div id="menu"
+                    class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                    <div
+                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800 ">
+                        <ul class="flex-col flex gap-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html" class="dark:text-white font-semibold">Contact</a></li>
+                        </ul>
+                        <button id="close_button" class="cursor-pointer pt-2">
+                            <img src="./assets/buttons/close.svg" alt="close_button_img">
+                        </button>
+                    </div>
+                </div>
             </nav>
         </div>
     </div>
