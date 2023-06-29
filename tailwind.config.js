@@ -2,7 +2,7 @@
 module.exports = {
   // remove for automatic dark mode
   darkMode: "class",
-  content: ["./public/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
