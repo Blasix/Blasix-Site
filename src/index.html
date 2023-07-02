@@ -16,12 +16,12 @@
     <link href="./css/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-stone-950 dark:text-white overflow-hidden font-quicksand">
+<body class="dark:bg-stone-950 dark:text-white overflow-hidden font-quicksand ">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
             <nav id="navbar"
-                class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80">
+                class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
 
                 <!-- big screen navbar -->
                 <img src="./assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
@@ -40,7 +40,7 @@
                 <div id="menu"
                     class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
                     <div
-                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800 ">
+                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
                             <li><a href="index.html" class="dark:text-white font-semibold">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -54,22 +54,27 @@
                 </div>
             </nav>
 
-            <div id="body" class=" h-screen flex justify-between items-center lg:flex-row flex-col">
+            <!-- body -->
+            <div id="body" class=" h-screen flex justify-between items-center lg:flex-row flex-col font-bold z-10">
                 <div class="text-center flex flex-col gap-3">
-                    <h1 class="text-6xl">Software Development</h1>
-                    <div class="border-t border-gray-400"></div>
-                    <p class="text-gray-600 text-4xl">Blasix, We fire through all software problems</p>
+                    <h1 class="text-6xl ">Software Development</h1>
+                    <div class="border-t border-white/20"></div>
+                    <p class="text-white/60 text-4xl">Blasix, We fire through all software problems</p>
                 </div>
                 <img src="./assets/home.svg" alt="Home">
             </div>
 
-            <!-- <div class="absolute left-96 bottom-96 h-[1000px] w-[1000px] blur-[1000px] rounded-full bg-blue-700/20">
-            </div> -->
+            <!-- backround -->
+            <div class="fixed right-10 2xl:right-96 top-10 h-[800px] w-[600px] bg-blue-700/50 blur-[400px] -z-50">
+                <div class="h-full w-full"></div>
+            </div>
+            <div
+                class="fixed 2xl:left-[800px] xl:left-[600px] left-96 bottom-10 h-[500px] w-[400px] blur-[380px] bg-cyan-600/60 -z-50">
+            </div>
 
         </div>
     </div>
 </body>
-
 <script src="./js/navbar.js"></script>
 
 </html>
