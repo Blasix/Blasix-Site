@@ -1,0 +1,37 @@
+#cards:hover > .card  > .card-border{
+    opacity: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::before,
+.card > .card-border {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06) 0%, transparent 40%);
+    z-index: 3;
+}
+
+.card > .card-border {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.3) 0%, transparent 40%);
+    z-index: -1;
+}
+
+.card > .card-content {
+    border-radius: inherit;
+    z-index: 2;
+}
