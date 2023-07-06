@@ -1,0 +1,20 @@
+<svg width="1440" height="990" viewBox="0 0 1440 990" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<rect width="1440" height="990" fill="#141414"/>
+<ellipse cx="1294.5" cy="450" rx="843.5" ry="683" fill="url(#paint0_radial_1_2)"/>
+<ellipse cx="1001.61" cy="715.413" rx="704.691" ry="635.518" transform="rotate(133.942 1001.61 715.413)" fill="url(#paint1_radial_1_2)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1322.97 450) rotate(127.648) scale(471.962 686.648)">
+<stop stop-color="#00BAF4" stop-opacity="0.3"/>
+<stop offset="1" stop-color="#004358" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_1_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1025.39 715.413) rotate(124.708) scale(422.972 595.594)">
+<stop stop-color="#00398F" stop-opacity="0.4"/>
+<stop offset="1" stop-color="#002761" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1_2">
+<rect width="1440" height="990" fill="white"/>
+</clipPath>
+</defs>
+</svg>

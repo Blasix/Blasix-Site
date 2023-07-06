@@ -14,9 +14,10 @@
     <link href="./css/card.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-stone-950 dark:text-white/90 md:overflow-hidden font-quicksand">
+<body class="dark:bg-stone-950 dark:text-white/90 font-quicksand">
+    <img src="assets/backrounds/projects.svg" alt="projects" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
-        <div class="xl:max-w-[1920px] w-full xl:h-screen">
+        <div class="xl:max-w-[1920px] w-full ">
             <!-- navbar -->
             <nav id="navbar" class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
 
@@ -34,7 +35,7 @@
                     <img src="./assets/buttons/menu.svg" alt="menu_button_img">
                 </button>
 
-                <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md z-50">
                     <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
                             <li><a href="index">Home</a></li>
@@ -50,27 +51,28 @@
             </nav>
 
             <!-- body -->
-            <div id="body" class="h-screen flex justify-center mt-24 flex-row font-bold z-10">
-                <div class="text-center flex flex-col gap-3">
+            <div class=" flex justify-center 2xl:mt-24 xl:mt-20 mt-10 flex-row font-bold z-10 ">
+
+                <div class="text-center flex flex-col gap-3 h-auto">
                     <h1 class="2xl:text-8xl xl:text-7xl text-6xl">Projects</h1>
                     <hr class="xl:w-96 w-60  h-1 mx-auto my-4  border-0 rounded md:my-8 dark:bg-white/20">
-                    <div class="flex flex-wrap gap-4 justify-center" id="cards">
+                    <div class="flex flex-wrap gap-4 justify-center pb-10" id="cards">
                         <a href="https://groupplanner.blasix.com" class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(23,23,23)] m-[1px] flex flex-col text-left p-4 card-content">
                                 <img src="assets/projects/groupplanner.png" alt="groupplanner" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">Group planning app</h2>
                                 <h1 class="text-3xl">Group Planner</h1>
                             </div>
                         </a>
                         <a href="https://github.com/Blasix/danzr_py" class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(23,23,23)] m-[1px] flex flex-col text-left p-4 card-content">
                                 <img src="assets/projects/danzr.png" alt="danzr" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">Discord music bot</h2>
                                 <h1 class="text-3xl">Danzr</h1>
                             </div>
                         </a>
                         <a href="https://blasix.com" class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(23,23,23)] m-[1px] flex flex-col text-left p-4 card-content">
                                 <img src="assets/projects/blasix.png" alt="blasix" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">This website</h2>
                                 <h1 class="text-3xl">Blasix.com</h1>

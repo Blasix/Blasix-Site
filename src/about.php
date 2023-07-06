@@ -14,6 +14,7 @@
 </head>
 
 <body class="dark:bg-stone-950 dark:text-white/90 md:overflow-hidden font-quicksand">
+    <img src="assets/backrounds/about.svg" alt="about" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->

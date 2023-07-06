@@ -17,6 +17,7 @@
 </head>
 
 <body class="dark:bg-stone-950 dark:text-white/90 overflow-hidden font-quicksand ">
+    <img src="assets/backrounds/index.svg" alt="index" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
@@ -54,23 +55,13 @@
             <!-- body -->
             <div id="body" class=" h-screen flex lg:justify-between justify-center items-center flex-row font-bold z-10">
                 <div class="text-center flex flex-col gap-3">
-                    <h1 class="2xl:text-8xl xl:text-7xl text-6xl">Software <br> Development</h1>
+                    <h1 class="2xl:text-8xl xl:text-7xl sm:text-6xl text-5xl">Software <br> Development</h1>
                     <hr class="xl:w-96 w-60  h-1 mx-auto my-4  border-0 rounded md:my-8 dark:bg-white/20">
-                    <h2 class="dark:text-white/60 2xl:text-5xl xl:text-4xl text-3xl">Blasix, We fire through all <br>
-                        software
-                        problems
+                    <h2 class="dark:text-white/60 2xl:text-5xl xl:text-4xl sm:text-3xl text-2xl">Blasix, We fire through all <br> software problems
                     </h2>
                 </div>
                 <img src="./assets/home.svg" alt="Home" class="lg:flex hidden w-[500px] xl:w-[600px] 2xl:w-[700px]">
             </div>
-
-            <!-- backround -->
-            <div class="fixed right-10 2xl:right-96 top-10 h-[800px] w-[600px] bg-blue-700/50 blur-[400px] -z-50">
-                <div class="h-full w-full"></div>
-            </div>
-            <div class="fixed 2xl:left-[800px] xl:left-[600px] left-96 bottom-10 h-[500px] w-[400px] blur-[380px] bg-cyan-600/60 -z-50">
-            </div>
-
         </div>
     </div>
 </body>
