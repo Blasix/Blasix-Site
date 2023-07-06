@@ -20,16 +20,15 @@
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
-            <nav id="navbar"
-                class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
+            <nav id="navbar" class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
 
                 <!-- big screen navbar -->
                 <img src="./assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
                 <ul class="hidden lg:flex gap-4 lg:gap-8 list-none items-center">
-                    <li><a href="index.html" class="dark:text-white font-semibold">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index" class="dark:text-white font-semibold">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
 
                 <!-- small screen navbar (burger menu) -->
@@ -37,15 +36,13 @@
                     <img src="./assets/buttons/menu.svg" alt="menu_button_img">
                 </button>
 
-                <div id="menu"
-                    class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
-                    <div
-                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
+                <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                    <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
-                            <li><a href="index.html" class="dark:text-white font-semibold">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index" class="dark:text-white font-semibold">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="projects">Projects</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                         <button id="close_button" class="cursor-pointer pt-2">
                             <img src="./assets/buttons/close.svg" alt="close_button_img">
@@ -55,8 +52,7 @@
             </nav>
 
             <!-- body -->
-            <div id="body"
-                class=" h-screen flex lg:justify-between justify-center items-center flex-row font-bold z-10">
+            <div id="body" class=" h-screen flex lg:justify-between justify-center items-center flex-row font-bold z-10">
                 <div class="text-center flex flex-col gap-3">
                     <h1 class="2xl:text-8xl xl:text-7xl text-6xl">Software <br> Development</h1>
                     <hr class="xl:w-96 w-60  h-1 mx-auto my-4  border-0 rounded md:my-8 dark:bg-white/20">
@@ -72,8 +68,7 @@
             <div class="fixed right-10 2xl:right-96 top-10 h-[800px] w-[600px] bg-blue-700/50 blur-[400px] -z-50">
                 <div class="h-full w-full"></div>
             </div>
-            <div
-                class="fixed 2xl:left-[800px] xl:left-[600px] left-96 bottom-10 h-[500px] w-[400px] blur-[380px] bg-cyan-600/60 -z-50">
+            <div class="fixed 2xl:left-[800px] xl:left-[600px] left-96 bottom-10 h-[500px] w-[400px] blur-[380px] bg-cyan-600/60 -z-50">
             </div>
 
         </div>

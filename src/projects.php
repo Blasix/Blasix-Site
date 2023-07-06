@@ -18,16 +18,15 @@
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
-            <nav id="navbar"
-                class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
+            <nav id="navbar" class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
 
                 <!-- big screen navbar -->
                 <img src="./assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
                 <ul class="hidden lg:flex gap-4 lg:gap-8 list-none items-center">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html" class="dark:text-white font-semibold">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="projects" class="dark:text-white font-semibold">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
 
                 <!-- small screen navbar (burger menu) -->
@@ -35,15 +34,13 @@
                     <img src="./assets/buttons/menu.svg" alt="menu_button_img">
                 </button>
 
-                <div id="menu"
-                    class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
-                    <div
-                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
+                <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                    <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html" class="dark:text-white font-semibold">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="projects" class="dark:text-white font-semibold">Projects</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                         <button id="close_button" class="cursor-pointer pt-2">
                             <img src="./assets/buttons/close.svg" alt="close_button_img">
@@ -59,26 +56,21 @@
                     <hr class="xl:w-96 w-60  h-1 mx-auto my-4  border-0 rounded md:my-8 dark:bg-white/20">
                     <div class="flex flex-wrap gap-4 justify-center" id="cards">
                         <a href="https://groupplanner.blasix.com" class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div
-                                class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
-                                <img src="assets/projects/groupplanner.png" alt="groupplanner"
-                                    class="w-[266px] h-[160]">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                                <img src="assets/projects/groupplanner.png" alt="groupplanner" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">Group planning app</h2>
                                 <h1 class="text-3xl">Group Planner</h1>
                             </div>
                         </a>
-                        <a href="https://github.com/Blasix/danzr_py"
-                            class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div
-                                class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                        <a href="https://github.com/Blasix/danzr_py" class="dark:bg-white/10 rounded-[30px] relative card">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
                                 <img src="assets/projects/danzr.png" alt="danzr" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">Discord music bot</h2>
                                 <h1 class="text-3xl">Danzr</h1>
                             </div>
                         </a>
                         <a href="https://blasix.com" class="dark:bg-white/10 rounded-[30px] relative card">
-                            <div
-                                class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(18,16,14)] m-[1px] flex flex-col text-left p-4 card-content">
                                 <img src="assets/projects/blasix.png" alt="blasix" class="w-[266px] h-[160]">
                                 <h2 class="dark:text-white/60 text-2xl">This website</h2>
                                 <h1 class="text-3xl">Blasix.com</h1>

@@ -1,3 +1,7 @@
+<?php
+header("HTTP/1.0 404 Not Found");
+?>
+
 <!doctype html>
 <html class="dark">
 
@@ -17,16 +21,15 @@
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
             <!-- navbar -->
-            <nav id="navbar"
-                class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
+            <nav id="navbar" class="w-full flex justify-between items-center text-2xl lg:text-3xl xl:pt-10 pt-6 dark:text-white/80 z-10">
 
                 <!-- big screen navbar -->
                 <img src="./assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
                 <ul class="hidden lg:flex gap-4 lg:gap-8 list-none items-center">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
 
                 <!-- small screen navbar (burger menu) -->
@@ -34,15 +37,13 @@
                     <img src="./assets/buttons/menu.svg" alt="menu_button_img">
                 </button>
 
-                <div id="menu"
-                    class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
-                    <div
-                        class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
+                <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
+                    <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="projects">Projects</a></li>
+                            <li><a href="contact">Contact</a></li>
                         </ul>
                         <button id="close_button" class="cursor-pointer pt-2">
                             <img src="./assets/buttons/close.svg" alt="close_button_img">
@@ -50,6 +51,17 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- body -->
+            <div id="body" class="flex justify-center items-center w-full font-bold text-center">
+                <div>
+                    <img src="./assets/404.svg" alt="404" class="2xl:w-[600px] xl:w-[400px] md:w-[320px] w-[260px] ">
+                    <hr class="h-1 mx-auto my-4 mb-8 border-0 rounded md:my-8 md:mb-14 dark:bg-white/20">
+                    <a href="index" class="border-2 rounded-3xl border-white/10 2xl:text-6xl xl:px-10 xl:py-2 xl:text-4xl px-6 py-1 text-4xl">
+                        Back
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
