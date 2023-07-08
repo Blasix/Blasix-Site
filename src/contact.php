@@ -13,7 +13,7 @@
     <link href="./css/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-stone-950 dark:text-white/90 md:overflow-hidden font-quicksand">
+<body class="dark:bg-[rgb(20,20,20)] dark:text-white/90 md:overflow-hidden font-quicksand">
     <img src="assets/backrounds/contact.svg" alt="contact" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
@@ -48,6 +48,55 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- body -->
+            <div id="body" class="h-screen flex justify-center items-center font-bold z-10">
+                <?php
+
+                if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $message = $_POST['message'];
+
+                    // Set the recipient email address
+                    $to = 'knock@blasix.com';
+
+                    // Set the email subject
+                    $subject = 'New message from ' . $name;
+
+                    // Set the email headers
+                    $headers = "From: $email\r\n";
+                    $headers .= "Reply-To: $email\r\n";
+                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+                    // Send the email using the mail() function
+                    if (mail($to, $subject, $message, $headers)) {
+                        // Show a success message
+                        echo '<div class="bg-green-500 text-white px-4 py-2 rounded-lg">Your message has been sent!</div>';
+                    } else {
+                        // Show an error message
+                        echo '<div class="bg-red-500 text-white px-4 py-2 rounded-lg">There was an error sending your message.</div>';
+                    }
+                } else {
+                    // Show the form
+                    echo '<form method="POST">
+                            <div class="flex flex-col border border-white/20 bg-[rgb(23,23,23)]/70 rounded-3xl p-3 gap-3 text-xl">
+                                <div class="flex xl:flex-row  flex-col gap-3 ">
+                                    <input class="rounded-xl border border-white/20 bg-[rgb(23,23,23)]/70 xl:w-1/3 px-3 py-1" type="text" id="name" name="name" placeholder="Name" required>
+                                    <input class="rounded-xl border border-white/20 bg-[rgb(23,23,23)]/70 xl:w-2/3 px-3 py-1" type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+
+                                <textarea class="rounded-xl border border-white/20 bg-[rgb(23,23,23)]/70 resize-none overflow-hidden px-3 py-1" rows="4"  placeholder="Message" id="message" name="message" required></textarea>
+                            </div>
+
+                            <div class="flex mx-4 justify-between xl:justify-end mt-2 gap-3">
+                                <button type="submit" class="bg-green-600/70 border rounded-full border-white/20 px-3 py-1">Submit</button>
+                                <button type="reset" class="bg-red-600/70 border rounded-full border-white/20 px-3 py-1">Clear</button>
+                            </div>
+                        </form>';
+                }
+                ?>
+            </div>
         </div>
     </div>
 </body>

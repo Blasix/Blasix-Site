@@ -14,7 +14,7 @@
     <link href="./css/card.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-stone-950 dark:text-white/90 font-quicksand">
+<body class="dark:bg-[rgb(20,20,20)] dark:text-white/90 font-quicksand">
     <img src="assets/backrounds/projects.svg" alt="projects" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full ">
