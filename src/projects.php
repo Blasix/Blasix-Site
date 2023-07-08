@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Blasix">
+    <meta name="description" content="Blasix - all projects made by blasix">
+    <meta name="keywords" content="projects, web, discord, mobile, app, group planner, danzr">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Blasix | Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +53,7 @@
             </nav>
 
             <!-- body -->
-            <div class=" flex justify-center 2xl:mt-24 xl:mt-20 mt-10 flex-row font-bold z-10 ">
+            <div class="flex justify-center 2xl:mt-24 xl:mt-20 mt-10 flex-row font-bold z-10 ">
 
                 <div class="text-center flex flex-col gap-3 h-auto">
                     <h1 class="2xl:text-8xl xl:text-7xl text-6xl">Projects</h1>

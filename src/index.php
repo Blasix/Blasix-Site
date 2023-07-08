@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Blasix">
+    <meta name="description" content="Blasix - Full stack mobile and web development">
+    <meta name="keywords" content="Blasix, blasix, BLASIX, Bas, Bas Lazaroms, Web development, websites, mobile, app, full stack, developer">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Blasix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">

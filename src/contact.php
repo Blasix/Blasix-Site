@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Blasix">
+    <meta name="description" content="Blasix - send a mail to the company blasix">
+    <meta name="keywords" content="mail, contact, blasix">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Blasix | Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +15,7 @@
     <link href="./css/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-[rgb(20,20,20)] dark:text-white/90 md:overflow-hidden font-quicksand">
+<body class="dark:bg-[rgb(20,20,20)] dark:text-white/90 overflow-hidden font-quicksand">
     <img src="assets/backrounds/contact.svg" alt="contact" class="fixed -z-10 w-screen h-screen object-cover">
     <div class="flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-[1920px] w-full xl:h-screen">
@@ -50,9 +52,10 @@
             </nav>
 
             <!-- body -->
-            <div id="body" class="h-screen flex justify-center items-center font-bold z-10">
+            <div id="body" class="h-screen flex flex-col justify-center items-center font-bold z-10">
+                <h1 class="xl:text-6xl text-4xl">Contact Blasix</h1>
+                <hr class="xl:w-96 w-60  h-1 mx-auto my-4  border-0 rounded md:my-8 dark:bg-white/20">
                 <?php
-
                 if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
                     $name = $_POST['name'];
                     $email = $_POST['email'];
@@ -72,10 +75,16 @@
                     // Send the email using the mail() function
                     if (mail($to, $subject, $message, $headers)) {
                         // Show a success message
-                        echo '<div class="bg-green-500 text-white px-4 py-2 rounded-lg">Your message has been sent!</div>';
+                        echo '<div class="flex flex-col justify-center items-center text-center">
+                                <div class="bg-green-600/70 text-white px-4 py-2 rounded-lg border-2 border-white/20">Your message has been sent!</div>
+                                <a href="contact" class="rounded-t-none rounded-lg border-x-2 border-b-2 border-white/20 bg-[rgb(23,23,23)]/70 px-4 py-2 hover:bg-white/5">Send another mail</a>
+                            </div>';
                     } else {
                         // Show an error message
-                        echo '<div class="bg-red-500 text-white px-4 py-2 rounded-lg">There was an error sending your message.</div>';
+                        echo '<div class="flex flex-col justify-center items-center text-center">
+                                <div class="bg-red-600/70 text-white px-4 py-2 rounded-lg border-2 border-white/20">There was an error sending your message.</div>
+                                <a href="contact" class="rounded-t-none rounded-lg border-x-2 border-b-2 border-white/20 bg-[rgb(23,23,23)]/70 px-4 py-2 hover:bg-white/5">Try again</a>
+                            </div>';
                     }
                 } else {
                     // Show the form

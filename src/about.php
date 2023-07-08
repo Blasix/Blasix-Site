@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Blasix">
+    <meta name="description" content="Blasix - everything important about blasix">
+    <meta name="keywords" content="info, about, starting">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Blasix | About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
