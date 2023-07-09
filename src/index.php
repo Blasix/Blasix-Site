@@ -29,7 +29,6 @@
                 <img src="./assets/logo/logoTextSide.svg" alt="NavLogo" class="h-10 lg:h-14 object-contain">
                 <ul class="hidden lg:flex gap-4 lg:gap-8 list-none items-center">
                     <li><a href="index" class="dark:text-white font-semibold">Home</a></li>
-                    <li><a href="about">About</a></li>
                     <li><a href="projects">Projects</a></li>
                     <li><a href="contact">Contact</a></li>
                 </ul>
@@ -43,7 +42,6 @@
                     <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
                         <ul class="flex-col flex gap-1">
                             <li><a href="index" class="dark:text-white font-semibold">Home</a></li>
-                            <li><a href="about">About</a></li>
                             <li><a href="projects">Projects</a></li>
                             <li><a href="contact">Contact</a></li>
                         </ul>
