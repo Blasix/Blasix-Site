@@ -28,6 +28,10 @@
                     <li><a href="index">Home</a></li>
                     <li><a href="projects">Projects</a></li>
                     <li><a href="contact" class="dark:text-white font-semibold">Contact</a></li>
+                    <hr class="w-1 h-10 mx-auto border-0 rounded dark:bg-white/20">
+                    <a href="https://discord.gg/73fj8ez9nC">
+                        <img src="./assets/socials/discord.svg" alt="discord" class="h-8">
+                    </a>
                 </ul>
 
                 <!-- small screen navbar (burger menu) -->
@@ -36,15 +40,24 @@
                 </button>
 
                 <div id="menu" class="hidden lg:hidden absolute w-full h-full top-0 right-0 bg-stone-950/20 backdrop-blur-md">
-                    <div class="flex text-start items-start gap-20 p-6 absolute top-0 right-0 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 ">
-                        <ul class="flex-col flex gap-1">
-                            <li><a href="index">Home</a></li>
-                            <li><a href="projects">Projects</a></li>
-                            <li><a href="contact" class="dark:text-white font-semibold">Contact</a></li>
-                        </ul>
-                        <button id="close_button" class="cursor-pointer pt-2">
-                            <img src="./assets/buttons/close.svg" alt="close_button_img">
-                        </button>
+                    <div class="flex flex-col absolute top-0 right-0 px-6 py-4 m-6 sm:mx-16 w-auto rounded-xl dark:bg-stone-800/90 gap-4">
+                        <div class="flex text-start items-start gap-20">
+                            <ul class="flex-col flex gap-1">
+                                <li><a href="index">Home</a></li>
+                                <li><a href="projects">Projects</a></li>
+                                <li><a href="contact" class="dark:text-white font-semibold">Contact</a></li>
+                            </ul>
+                            <button id="close_button" class="cursor-pointer pt-2">
+                                <img src="./assets/buttons/close.svg" alt="close_button_img">
+                            </button>
+                        </div>
+                        <hr class="w-full  h-1 mx-auto   border-0 rounded  dark:bg-white/20">
+                        <!-- buttons -->
+                        <div class="mx-auto mt-1">
+                            <a href="https://discord.gg/73fj8ez9nC">
+                                <img src="./assets/socials/discord.svg" alt="discord" class="h-7">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
