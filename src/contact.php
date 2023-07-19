@@ -147,7 +147,6 @@
                 </form>';
                 }
                 ?>
-
             </div>
         </div>
     </div>
@@ -156,7 +155,13 @@
 <script src="./js/navbar.js"></script>
 <script>
     function onSubmit(token) {
-        document.getElementById("contactForm").submit();
+        var form = document.getElementById("contactForm");
+        if (form.checkValidity()) {
+            form.submit();
+        } else {
+            grecaptcha.reset();
+            form.reportValidity();
+        }
     }
 </script>
 
