@@ -76,7 +76,7 @@
                 $ip = $_SERVER['REMOTE_ADDR'];
 
                 // check if ip has 3 strikes
-                if (true) {
+                if (false) {
                     // show error message
                     echo '<div class="flex flex-col justify-center items-center text-center">
                             <div class="bg-red-600/70 text-white px-4 py-2 rounded-lg border-2 border-white/20">You are a robot.</div>
@@ -91,7 +91,8 @@
                     if (isset($_POST['g-recaptcha-response'])) {
                         $token = $_POST['g-recaptcha-response'];
                         $url = 'https://www.google.com/recaptcha/api/siteverify';
-                        $secret_key = getenv('RECAPTCHA_SECRET_KEY');
+                        $env = parse_ini_file('.env');
+                        $secret_key = $env['RECAPTCHA_SECRET_KEY'];
                         $data = array(
                             'secret' => $secret_key,
                             'response' => $token
