@@ -84,6 +84,13 @@
                                 <h1 class="text-3xl">Danzr</h1>
                             </div>
                         </a>
+                        <a href="https://chexagon.blasix.com/index.html" class="dark:bg-white/10 rounded-[30px] relative card">
+                            <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(23,23,23)] m-[1px] flex flex-col text-left p-4 card-content max-w-[298px]">
+                                <img src="assets/projects/chexagon.png" alt="danzr" class="w-[266px] h-[160]">
+                                <h2 class="dark:text-white/60 text-2xl">Chess with hexagons</h2>
+                                <h1 class="text-3xl">Chexagon</h1>
+                            </div>
+                        </a>
                         <a href="https://blasix.com" class="dark:bg-white/10 rounded-[30px] relative card">
                             <div class="h-[calc(100%-2px)] w-[calc(100%-2px)] bg-[rgb(23,23,23)] m-[1px] flex flex-col text-left p-4 card-content max-w-[298px]">
                                 <img src="assets/projects/blasix.png" alt="blasix" class="w-[266px] h-[160]">

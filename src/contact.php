@@ -78,11 +78,6 @@
                 // check if ip has 3 strikes
                 if (false) {
                     // show error message
-                    echo '<div class="flex flex-col justify-center items-center text-center">
-                            <div class="bg-red-600/70 text-white px-4 py-2 rounded-lg border-2 border-white/20">You are a robot.</div>
-                            <a href="contact" class="rounded-t-none rounded-lg border-x-2 border-b-2 border-white/20 bg-[rgb(23,23,23)]/70 px-4 py-2 hover:bg-white/5">Try again</a>
-                        </div>';
-                    die();
                 }
 
                 if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
